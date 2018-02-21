@@ -6,9 +6,12 @@
 <body>
 <h1>Mujina Identity Provider</h1>
 <p th:if="${param.error}" class="error">Wrong user or password</p>
+<p>0000001:HONSHA</p><p>0000002:TOKYO/SHUTOKENDOBOKU</p><p>0000003:SHUTOKENDOBOKU</p>
+<p>1000001:SITE USER/LEADER</p><p>1000002:SITE ADMIN</p><p>1000003:SITE USER</p>
 <form th:action="@{/login}" method="post">
     <label for="username">Username</label>:
     <input type="text" id="username" name="username" autofocus="autofocus" /> <br />
+<p>Ic*******</p>
     <label for="password">Password</label>:
     <input type="password" id="password" name="password" /> <br />
     <input type="submit" value="Log in" />

@@ -60,7 +60,17 @@ public class IdpConfiguration extends SharedConfiguration {
     users.addAll(Arrays.asList(
       new UsernamePasswordAuthenticationToken("admin", "secret", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"),
         new SimpleGrantedAuthority("ROLE_ADMIN"))),
-      new UsernamePasswordAuthenticationToken("user", "secret", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER")))));
+      new UsernamePasswordAuthenticationToken("0000001", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"),
+        new SimpleGrantedAuthority("ROLE_ADMIN"))),
+      new UsernamePasswordAuthenticationToken("user", "secret", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("0000002", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("1000001", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("1000002", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("1020161", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("1020129", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("2003414", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("1020250", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"))),
+      new UsernamePasswordAuthenticationToken("0000003", "Icsoft123", Arrays.asList(new SimpleGrantedAuthority("ROLE_USER")))));
   }
 
   private void resetAttributes() {

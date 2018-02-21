@@ -15,7 +15,7 @@ server:
 
 sp:
   # base url
-  base_url: http://localhost:9090
+  base_url: http://rakrak-dev02:9090
   # Entity ID of the SP
   entity_id: http://mock-sp
   # Private key used to sign the SAML response
@@ -27,7 +27,7 @@ sp:
   # Resource URL for the idp metadata
   idp_metadata_url: classpath:metadata/mujina.local.idp.metadata.xml
   # SingleSignOnServiceLocation
-  single_sign_on_service_location: http://localhost:8080/SingleSignOnService
+  single_sign_on_service_location: http://rakrak-dev02:18090/SingleSignOnService
   # ACS location
   acs_location_path: /saml/SSO
   # Protocol binding
